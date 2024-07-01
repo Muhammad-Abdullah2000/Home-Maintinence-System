@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+  }
+  nav{
+    background: black;
+    height: 80px;
+    width: 100%;
+    text-decoration: none;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  nav ul li a{
+     color: white; 
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  a:hover{
+    background: white;
+    transition: .5s;
+    color: black;
+  }
+  .checkbtn{
+    font-size: 30px;
+    /* color: white; */
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: black;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      color: white;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+      color: white;
+    }
+    nav ul li a{
+      font-size: 20px;
+      color: white;
+    }
+  
+    #check:checked ~ ul{
+      left: 0;
+      color: white;
+      
+    }
+   
+    i{
+        color: white;
+    }
+  }
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+
+  .footer {
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+  
+ 
+   #social{
+    color: white;
+    height: 2px;
+    padding: 30px;
+    font-size: 30px;
+    margin-bottom: 5px;
+    transition: 0.5s ease;
+    
+  } 
+   #social:hover{
+    color: rgb(65, 56, 100);
+  } 
+
+  
+  .footer p {
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .footer svg {
+      font-size: 50px;
+    }
+    #social{
+      font-size: 30px;
+      padding: 10px;
+    }
+    .footer p{
+      font-size: 13px;
+      margin-top: 2px;
+    }
+    #welcome{
+        font-size: 20px;
+        margin-top: 2px;
+    }
+    
+  }
+  

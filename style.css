@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+     /* background-color: cadetblue;  */
+}
+
+
+
+.container{
+    color: rgb(0, 0, 0);
+    height: 15rem;
+     width: 100%; 
+     text-align: center;
+     font-family: 'Open Sans', sans-serif;
+     /* background-color: blue; */
+   
+   
+}
+
+.typing{
+    color: rgb(65, 56, 100);
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}  
+#Typing{
+    position: relative;
+    top: 50px; 
+    left: -10px;
+    font-family: 'Open Sans', sans-serif;
+}
+#welcome{
+    position: relative;
+    top: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+.container1{
+    /* background-color: aqua; */
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+}
+#img{
+    height: 200px;
+    width: 350px;
+    position: relative;
+    top: -10%;
+   
+
+}
+.btn{
+    height: 100px;
+    width: 200px;
+    background: transparent;
+    border: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.2s ease-in;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+#arrow{
+  font-weight: bold;
+}
+.footer {
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+  
+ 
+   #social{
+    color: white;
+    height: 2px;
+    padding: 30px;
+    font-size: 30px;
+    margin-bottom: 5px;
+    transition: 0.5s ease;
+    
+  } 
+   #social:hover{
+    color: rgb(65, 56, 100);
+  } 
+
+  
+  .footer p {
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .footer svg {
+      font-size: 50px;
+    }
+    #social{
+      font-size: 30px;
+      padding: 10px;
+    }
+    .footer p{
+      font-size: 13px;
+      margin-top: 2px;
+    }
+    #welcome{
+        font-size: 20px;
+        margin-top: 2px;
+    }
+  }
